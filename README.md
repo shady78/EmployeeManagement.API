@@ -77,3 +77,54 @@ To run unit tests:
 
 Ensure you have the test project included in your solution.
 Open the Test Explorer in Visual Studio and run all tests.
+
+# Employee Management API Documentation
+
+## Overview
+The Employee Management API provides a simple way to manage employee records in an organization. This API supports CRUD (Create, Read, Update, Delete) operations to facilitate employee management.
+
+## API Endpoints
+
+### 1. Get All Employees
+- **Method**: `GET`
+- **Endpoint**: `/Employees`
+- **Description**: Retrieves a list of all employees.
+- **Response**:
+  - **200 OK**: Returns an array of employee objects.
+  
+### 2. Add a New Employee
+- **Method**: `POST`
+- **Endpoint**: `/Employees`
+- **Description**: Adds a new employee to the database.
+- **Request Body**:
+  ```json
+  {
+      "Name": "Employee Name",
+      "Department": "Employee Department",
+      "Salary": 5000
+  }
+  
+### 3. Update an Existing Employee
+- **Method**: `PUT`
+- **Endpoint**: `/Employees/{id}`
+- **Description**: Updates the details of an existing employee.
+- **Request Body**:
+    ```json
+    {
+    "Name": "Updated Name",
+    "Department": "Updated Department",
+    "Salary": 6000
+   }
+   
+- **Response**:
+- **200 OK**: Returns the updated employee object.
+- **404 Not Found**: If the employee does not exist.
+
+### 4. Delete an Employee
+- **Method**: `DELETE`
+- **Endpoint**: /Employees/{id}
+- **Description**: Deletes an employee from the database.
+- **Response**:
+- **204 No Content**: Employee deleted successfully.
+- **404 Not Found**: If the employee does not exist.
+

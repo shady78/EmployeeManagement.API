@@ -1,4 +1,5 @@
 # Employee Management API
+![Screenshot 2024-09-19 150845](https://github.com/user-attachments/assets/0d00639f-9d81-4dcf-9ecb-0fd3f8ea42b0)
 
 ## Overview
 This project is a simple CRUD API built using .NET Core to manage employees in an organization.
@@ -22,9 +23,8 @@ Change your directory to the project folder:
 cd yourrepository
 ```
 3. Setup the Database
-Install PostgreSQL: If you don't have PostgreSQL installed, download and install it from PostgreSQL Official Site.
+Install PostgreSQL: If you don't have PostgreSQL installed, download and install it from PostgreSQL [Official Site](https://www.postgresql.org/download/).
 
-- Note : you can ignore this step
 - Create a Database: 
 
 Open the PostgreSQL command line or pgAdmin.
